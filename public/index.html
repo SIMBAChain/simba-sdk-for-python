@@ -10,19 +10,19 @@
       
       
       
-        <link rel="next" href="usage/">
+        <link rel="next" href="getting-started/">
       
       
       <link rel="icon" href="assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
     
     
       
-        <title>Python SDK</title>
+        <title>Ensure SDK for Python (Preview)</title>
       
     
     
-      <link rel="stylesheet" href="assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
@@ -46,7 +46,7 @@
     
       <link rel="stylesheet" href="assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#ensure-sdk-for-python" class="md-skip">
+        <a href="#essential-overview" class="md-skip">
           Skip to content
         </a>
       
@@ -86,26 +86,26 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href="." title="Python SDK" class="md-header__button md-logo" aria-label="Python SDK" data-md-component="logo">
+    <a href="." title="Ensure SDK for Python (Preview)" class="md-header__button md-logo" aria-label="Ensure SDK for Python (Preview)" data-md-component="logo">
       
   <img src="assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Python SDK
+            Ensure SDK for Python (Preview)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Home
+              Overview
             
           </span>
         </div>
@@ -119,7 +119,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -128,15 +128,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
@@ -156,13 +156,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://gitlab.com/SIMBAChain/api-dev-kits/python-sdk" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/simbachain/ensure-sdk-for-python" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    GitLab
+    GitHub
   </div>
 </a>
       </div>
@@ -192,22 +192,22 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="." title="Python SDK" class="md-nav__button md-logo" aria-label="Python SDK" data-md-component="logo">
+    <a href="." title="Ensure SDK for Python (Preview)" class="md-nav__button md-logo" aria-label="Ensure SDK for Python (Preview)" data-md-component="logo">
       
   <img src="assets/logo.svg" alt="logo">
 
     </a>
-    Python SDK
+    Ensure SDK for Python (Preview)
   </label>
   
     <div class="md-nav__source">
-      <a href="https://gitlab.com/SIMBAChain/api-dev-kits/python-sdk" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/simbachain/ensure-sdk-for-python" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    GitLab
+    GitHub
   </div>
 </a>
     </div>
@@ -227,14 +227,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    Home
+    Overview
   </span>
   
 
@@ -245,7 +243,7 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Overview
   </span>
   
 
@@ -256,8 +254,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -284,39 +280,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-your-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check your details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -332,11 +295,31 @@
   
   
     <li class="md-nav__item">
+      <a href="getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="usage/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    SDK Usage Patterns
+    Usage
   </span>
   
 
@@ -362,8 +345,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -389,39 +370,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#getting-started" class="md-nav__link">
-    <span class="md-ellipsis">
-      Getting Started
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Getting Started">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#check-your-details" class="md-nav__link">
-    <span class="md-ellipsis">
-      Check your details
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#troubleshooting" class="md-nav__link">
-    <span class="md-ellipsis">
-      Troubleshooting
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -440,70 +388,26 @@
   
 
 
-<h1 id="ensure-sdk-for-python">Ensure SDK for Python</h1>
-<p>The Python Ensure SDK simplifies creating, managing, and using Ensure features from Python code. This is including but not limited to: Creating Decentralised Identity Documents (DIDs), Verifiable Credentials (VPs), and Verifiable Presentations (VPs).</p>
+  <h1>Overview</h1>
+
+<p>The Python Ensure SDK simplifies creating, managing, and using Ensure features from Python code. This is including but not limited to:</p>
+<ul>
+<li>Creating Decentralised Identity Documents (DIDs)</li>
+<li>Verifiable Credentials (VPs)</li>
+<li>Verifiable Presentations (VPs)</li>
+<li>Publishing Resources</li>
+<li>Access Control to resources using VPs</li>
+</ul>
 <h2 id="essential-overview">Essential Overview</h2>
 <ul>
 <li>The Ensure SDK is how you should communicate with Ensure services wherever you run Python code.</li>
 <li>The minimum supported Python version is 3.8 or later.</li>
-<li>You <strong>must</strong> have been onboarded to a SIMBA environment that has Ensure available to use the SDKs</li>
-<li>The SDK and API is still in development. Whilst we strive for stability, please be aware that functions may change with short notice. All public-facing breaking changes will be communicated with advance notice.</li>
+<li>You <strong>must</strong> have been onboarded to a SIMBA environment that has Ensure available to use the SDKs.</li>
+<li>The Ensure SDK provides all method calls as <code>async</code>, providing flexibility for long-running code. (<a href="https://docs.python.org/3/library/asyncio.html">ref</a>)</li>
 </ul>
+<p>The SDK and API is still in development. Whilst we strive for stability, please be aware that functions may change with short notice. All public-facing breaking changes will be communicated with advance notice.</p>
 <h2 id="non-essential-details">Non-essential Details</h2>
-<ul>
-<li>The SDK is automatically generated from the OpenAPI definitions published by the services that comprise the Ensure product.</li>
-</ul>
-<h2 id="getting-started">Getting Started</h2>
-<p>Install the latest version of the SDK via pip:
-<div class="highlight"><pre><span></span><code>pip install simba-sdk
-</code></pre></div></p>
-<p>The <code>simba-sdk</code> needs a configuration set up before it can be used. This is done using environment variables, so depending on your situation, you may hard-code values using <code>os.environ[...]</code>, use a <code>.env</code> file, or just set environment variables at runtime.</p>
-<p>The required set of environment variables are as follows:
-- <code>CLIENT_ID</code>
-- <code>CLIENT_SECRET</code>
-- <code>TOKEN_URL</code>
-- <code>CREDENTIAL_URL</code>
-- <code>RESOURCE_URL</code>
-- <code>MEMBERS_URL</code></p>
-<h3 id="check-your-details">Check your details</h3>
-<p>Now validate your generated authentication credentials against the Ensure service. This section assumes that you have the <code>dotenv</code> library installed, and have the required config in a <code>.env</code> file.</p>
-<p>Here's an example of a <code>.env</code> file below. The client ID and client secret can be obtained from the members service. You will need User Impersonating Client Credentials in order to authorise the SDK to make requests on your behalf.</p>
-<div class="highlight"><pre><span></span><code>CLIENT_ID=...
-CLIENT_SECRET=...
-MEMBERS_URL=https://simba-dev-members-service.platform.simbachain.com
-CREDENTIAL_URL=https://simba-dev-credential-service.platform.simbachain.com
-RESOURCE_URL=https://simba-dev-resource-service.platform.simbachain.com
-TOKEN_URL=https://simba-dev-members-service-validator.platform.simbachain.com/oauth/token
-ENVIRONMENT=dev
-</code></pre></div>
-<p>Write the following code either in a script or an interactive python shell that has the Ensure SDK installed:</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
-<span class="kn">import</span> <span class="nn">asyncio</span>
-
-<span class="c1"># load environment variables from a .env file if they are not being set in the shell</span>
-<span class="n">load_dotenv</span><span class="p">(</span><span class="s2">&quot;/path/to/config/.env&quot;</span><span class="p">)</span>
-
-<span class="kn">from</span> <span class="nn">simba_sdk</span> <span class="kn">import</span> <span class="n">EnsureClient</span>
-
-<span class="n">DOMAIN</span> <span class="o">=</span> <span class="s2">&quot;my_domain&quot;</span>
-<span class="c1"># initialise a new client</span>
-<span class="c1"># your auth credentials will be picked up by the settings object under the hood</span>
-<span class="n">client</span> <span class="o">=</span> <span class="n">EnsureClient</span><span class="p">()</span>
-
-<span class="c1"># The client has a few helper properties that get set the first time you authorise.</span>
-<span class="c1"># You can authorise manually</span>
-<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">authorise</span><span class="p">()</span>
-
-<span class="c1"># or call any of the endpoints to do so automatically.</span>
-<span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_domain</span><span class="p">(</span><span class="n">DOMAIN</span><span class="p">)</span>
-
-<span class="c1"># any problems with authorisation will raise an exception, but just to double-check nothing&#39;s failing silently,</span>
-<span class="c1"># we can now check our user profile from within the client.</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="p">)</span>
-</code></pre></div>
-<p>The result should be a schema containing your profile, id, email etc. The information is obtained from the member service so it should be identical to a payload you get from the member service directly.</p>
-<h3 id="troubleshooting">Troubleshooting</h3>
-<p>The ensure client uses a simple exception structure that wraps around the request exceptions raised by the service clients. This means that there should be some plain description as to what's gone wrong, but also the response itself from the API if you need to do any further digging.</p>
+<p>The SDK is automatically generated from the OpenAPI definitions published by the services that comprise the Ensure product. It is advised that only methods defined by the <a href="getting-started/#ensure-client"><code>EnsureClient</code></a> class are used in your code, as everything else is subject to change without prior notice. The <code>EnsureClient</code> is designed to provide a stable interface.</p>
 
 
 
@@ -553,10 +457,10 @@ ENVIRONMENT=dev
     </div>
     
     
-    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": ".", "features": [], "search": "assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>

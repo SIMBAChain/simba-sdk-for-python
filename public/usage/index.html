@@ -9,20 +9,20 @@
       
       
       
-        <link rel="prev" href="..">
+        <link rel="prev" href="../getting-started/">
       
       
       
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.33">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.41">
     
     
       
-        <title>SDK Usage Patterns - Python SDK</title>
+        <title>Usage - Ensure SDK for Python (Preview)</title>
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.3cba04c6.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
@@ -46,7 +46,7 @@
     
       <link rel="stylesheet" href="../assets/_mkdocstrings.css">
     
-    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#sdk-usage-patterns" class="md-skip">
+        <a href="#create-a-did" class="md-skip">
           Skip to content
         </a>
       
@@ -86,26 +86,26 @@
 
 <header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="Header">
-    <a href=".." title="Python SDK" class="md-header__button md-logo" aria-label="Python SDK" data-md-component="logo">
+    <a href=".." title="Ensure SDK for Python (Preview)" class="md-header__button md-logo" aria-label="Ensure SDK for Python (Preview)" data-md-component="logo">
       
   <img src="../assets/logo.svg" alt="logo">
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
       
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            Python SDK
+            Ensure SDK for Python (Preview)
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              SDK Usage Patterns
+              Usage
             
           </span>
         </div>
@@ -119,7 +119,7 @@
     
       <label class="md-header__button md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
       </label>
       <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
@@ -128,15 +128,15 @@
       <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
         
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
       </label>
       <nav class="md-search__options" aria-label="Search">
         
         <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
           
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
         </button>
       </nav>
       
@@ -156,13 +156,13 @@
     
     
       <div class="md-header__source">
-        <a href="https://gitlab.com/SIMBAChain/api-dev-kits/python-sdk" title="Go to repository" class="md-source" data-md-component="source">
+        <a href="https://github.com/simbachain/ensure-sdk-for-python" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    GitLab
+    GitHub
   </div>
 </a>
       </div>
@@ -192,22 +192,22 @@
 
 <nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href=".." title="Python SDK" class="md-nav__button md-logo" aria-label="Python SDK" data-md-component="logo">
+    <a href=".." title="Ensure SDK for Python (Preview)" class="md-nav__button md-logo" aria-label="Ensure SDK for Python (Preview)" data-md-component="logo">
       
   <img src="../assets/logo.svg" alt="logo">
 
     </a>
-    Python SDK
+    Ensure SDK for Python (Preview)
   </label>
   
     <div class="md-nav__source">
-      <a href="https://gitlab.com/SIMBAChain/api-dev-kits/python-sdk" title="Go to repository" class="md-source" data-md-component="source">
+      <a href="https://github.com/simbachain/ensure-sdk-for-python" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
   </div>
   <div class="md-source__repository">
-    GitLab
+    GitHub
   </div>
 </a>
     </div>
@@ -225,7 +225,27 @@
         
   
   <span class="md-ellipsis">
-    Home
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Getting Started
   </span>
   
 
@@ -247,14 +267,12 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
   <span class="md-ellipsis">
-    SDK Usage Patterns
+    Usage
   </span>
   
 
@@ -265,7 +283,7 @@
         
   
   <span class="md-ellipsis">
-    SDK Usage Patterns
+    Usage
   </span>
   
 
@@ -276,8 +294,6 @@
 <nav class="md-nav md-nav--secondary" aria-label="Table of contents">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
@@ -305,18 +321,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-vp" class="md-nav__link">
+  <a href="#publish-a-resource" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a VP
+      Publish a resource
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#publish-a-resource" class="md-nav__link">
+  <a href="#create-a-vp" class="md-nav__link">
     <span class="md-ellipsis">
-      Publish a resource
+      Create a VP
     </span>
   </a>
   
@@ -356,8 +372,6 @@
   
   
   
-    
-  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -384,18 +398,18 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#create-a-vp" class="md-nav__link">
+  <a href="#publish-a-resource" class="md-nav__link">
     <span class="md-ellipsis">
-      Create a VP
+      Publish a resource
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#publish-a-resource" class="md-nav__link">
+  <a href="#create-a-vp" class="md-nav__link">
     <span class="md-ellipsis">
-      Publish a resource
+      Create a VP
     </span>
   </a>
   
@@ -428,85 +442,94 @@
   
 
 
-<h1 id="sdk-usage-patterns">SDK usage patterns</h1>
-<p>Almost every use case for the Ensure client starts with you setting your domain (which authorises for you under the hood!). You need to make transactions on the blockchain in a lot of scenarios, so you'll also need to set an account
-<div class="highlight"><pre><span></span><code>    <span class="kn">from</span> <span class="nn">simba_sdk</span> <span class="kn">import</span> <span class="n">EnsureClient</span>
-    <span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_schemas</span> <span class="k">as</span> <span class="n">cs</span>
+  <h1>Usage</h1>
 
-    <span class="n">DOMAIN</span><span class="p">,</span> <span class="n">BLOCKCHAIN</span> <span class="o">=</span> <span class="s2">&quot;my-domain&quot;</span><span class="p">,</span> <span class="s2">&quot;my-blockchain&quot;</span>
-
-    <span class="k">async</span> <span class="k">def</span> <span class="nf">setup</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="n">EnsureClient</span><span class="p">:</span>
-        <span class="n">client</span> <span class="o">=</span> <span class="n">EnsureClient</span><span class="p">()</span>
-        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_domain</span><span class="p">(</span><span class="n">DOMAIN</span><span class="p">)</span>
-        <span class="n">default_account</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">create_custodial_account</span><span class="p">(</span>
-            <span class="n">cs</span><span class="o">.</span><span class="n">CreateAccountHttp</span><span class="p">(</span><span class="n">nickname</span><span class="o">=</span><span class="s2">&quot;my-test-account&quot;</span><span class="p">,</span> <span class="n">domain</span><span class="o">=</span><span class="n">DOMAIN</span><span class="p">))</span>
-        <span class="n">ACCOUNT</span> <span class="o">=</span> <span class="n">default_account</span><span class="o">.</span><span class="n">alias</span>
-        <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">set_account</span><span class="p">(</span><span class="n">network</span><span class="o">=</span><span class="n">BLOCKCHAIN</span><span class="p">,</span> <span class="n">alias</span><span class="o">=</span><span class="n">ACCOUNT</span><span class="p">)</span>
-        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Performing actions as </span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="si">}</span><span class="s2">, in </span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">domain</span><span class="si">}</span><span class="s2">, with account </span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
-        <span class="k">return</span> <span class="n">client</span>
-
-    <span class="n">authenticated_client</span> <span class="o">=</span> <span class="k">await</span> <span class="n">setup</span><span class="p">()</span>
-</code></pre></div></p>
-<h3 id="create-a-did">Create a DID</h3>
+<p>This page covers the most common use-cases for the SIMBA Ensure product:</p>
+<div class="toc">
+<ul>
+<li><a href="#create-a-did">Create a DID</a></li>
+<li><a href="#issue-a-vc">Issue a VC</a></li>
+<li><a href="#publish-a-resource">Publish a resource</a></li>
+<li><a href="#create-a-vp">Create a VP</a></li>
+<li><a href="#request-access">Request access</a></li>
+</ul>
+</div>
+<p>Here we assume that the ensure client has been setup. If you missed this step, please follow the outline in <a href="../getting-started/#ensure-client">Ensure Client</a>.</p>
+<h2 id="create-a-did">Create a DID</h2>
 <p><strong>Decentralised Identifiers</strong> (DIDs) are an on chain way of representing a single entity (user, organisation etc.). A <strong>HOLDER</strong> DID can hold various credentials, which are issued to it by an <strong>ISSUER</strong> DID.
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">uuid</span>
-<span class="kn">import</span> <span class="nn">asyncio</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
 <span class="kn">from</span> <span class="nn">simba_sdk</span> <span class="kn">import</span> <span class="n">EnsureClient</span>
 <span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_schemas</span> <span class="k">as</span> <span class="n">cs</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_queries</span> <span class="k">as</span> <span class="n">cq</span>
 
 <span class="n">client</span><span class="p">:</span> <span class="n">EnsureClient</span> <span class="o">=</span> <span class="o">...</span>  <span class="c1"># assuming common setup from above</span>
-<span class="n">trust_profiles_response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">list_trust_profiles</span><span class="p">()</span>
+<span class="n">list_profiles_query</span> <span class="o">=</span> <span class="n">cq</span><span class="o">.</span><span class="n">ListTrustProfilesQuery</span><span class="p">(</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">trust_profiles_response</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">list_trust_profiles</span><span class="p">(</span><span class="n">list_profiles_query</span><span class="p">)</span>
 <span class="n">trust_profile</span> <span class="o">=</span> <span class="n">trust_profiles_response</span><span class="o">.</span><span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="n">new_issuer_did</span> <span class="o">=</span> <span class="n">cs</span><span class="o">.</span><span class="n">CreateDidHttp</span><span class="p">(</span>
-  <span class="n">trust_profile</span><span class="o">=</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">trust_profile</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">,</span>
-  <span class="n">account</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">PubKeyAccountInfo</span><span class="p">(</span>
-      <span class="n">public_key</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">public_key</span><span class="p">,</span>
-      <span class="n">alias</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">alias</span>
-  <span class="p">),</span>
-  <span class="n">permission</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">DidPermission</span><span class="o">.</span><span class="n">ISSUER</span><span class="p">,</span>
-  <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;my_test_dids&quot;</span><span class="p">,</span>
-  <span class="n">nickname</span><span class="o">=</span><span class="s2">&quot;My new Issuer DID&quot;</span><span class="p">,</span>
-  <span class="n">public_name</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">PublicName</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2">&#39;s ISSUER DID&quot;</span><span class="p">),</span>
-  <span class="n">seed</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
+    <span class="n">trust_profile</span><span class="o">=</span><span class="n">trust_profile</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+    <span class="n">account</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">PubKeyAccountInfo</span><span class="p">(</span>
+        <span class="n">public_key</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">public_key</span><span class="p">,</span>
+        <span class="n">alias</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">alias</span>
+    <span class="p">),</span>
+    <span class="n">permission</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">DidPermission</span><span class="o">.</span><span class="n">ISSUER</span><span class="p">,</span>
+    <span class="n">alias</span><span class="o">=</span><span class="s2">&quot;my_test_issuer_did&quot;</span><span class="p">,</span>
+    <span class="n">nickname</span><span class="o">=</span><span class="s2">&quot;My Issuer DID&quot;</span><span class="p">,</span>
+    <span class="n">public_name</span><span class="o">=</span><span class="n">cs</span><span class="o">.</span><span class="n">PublicName</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">client</span><span class="o">.</span><span class="n">user</span><span class="o">.</span><span class="n">profile</span><span class="o">.</span><span class="n">first_name</span><span class="si">}</span><span class="s2">&#39;s ISSUER DID&quot;</span><span class="p">),</span>
+    <span class="n">seed</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">uuid</span><span class="o">.</span><span class="n">uuid4</span><span class="p">())</span>
 <span class="p">)</span>
 
 <span class="n">task_id</span> <span class="o">=</span> <span class="k">await</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">create_did</span><span class="p">(</span><span class="n">createdidhttp</span><span class="o">=</span><span class="n">new_issuer_did</span><span class="p">))</span>
 
-<span class="c1"># This creates a task to publish the DID, you might need to wait a sec for it to show up</span>
-<span class="c1"># Or automatically wait until the task is complete</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-  <span class="n">task</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">Task</span> <span class="o">=</span> <span class="k">await</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">credential_get_task</span><span class="p">(</span><span class="n">task_id</span><span class="p">))</span>
-  <span class="k">if</span> <span class="n">task</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">cs</span><span class="o">.</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">COMPLETED</span><span class="p">:</span>
-    <span class="k">break</span>
+<span class="c1"># This creates a task to publish the DID, here we are using a while loop to poll the</span>
+<span class="c1"># server until the task is complete.</span>
+<span class="n">task</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">Task</span> <span class="o">=</span> <span class="k">await</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">credential_get_task</span><span class="p">(</span><span class="n">task_id</span><span class="p">))</span>
+<span class="k">while</span> <span class="n">task</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">cs</span><span class="o">.</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">COMPLETED</span><span class="p">:</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">task</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">Task</span> <span class="o">=</span> <span class="k">await</span><span class="p">(</span><span class="n">client</span><span class="o">.</span><span class="n">credential_get_task</span><span class="p">(</span><span class="n">task_id</span><span class="p">))</span>
 
 <span class="c1"># We can double-check as well</span>
 <span class="n">did</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">DIDResponseModel</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_did</span><span class="p">(</span><span class="n">did_id</span><span class="o">=</span><span class="n">task</span><span class="o">.</span><span class="n">object_id</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">did</span><span class="p">)</span>
 </code></pre></div></p>
 <p>N.B. The process is near identical for HOLDER dids, just change 'ISSUER' to 'HOLDER' in the input payload.</p>
-<h3 id="issue-a-vc">Issue a VC</h3>
-<p>One DID can <em>issue</em> a <strong>Verifiable Credential</strong>(VC) to another DID. This is essentially the issuer making a claim about the holder, i.e. that they hold a Bachelors Degree from the Issuer's University. VCs follow a pattern known as a schema, this defines what attributes the claim is actually attributing to the Holder.
+<h2 id="issue-a-vc">Issue a VC</h2>
+<p>One DID can <em>issue</em> a <strong>Verifiable Credential</strong>(VC) to another DID. This is essentially the issuer making a claim about the holder, i.e. that they hold a Bachelors Degree from the Issuer's University. VCs follow a pattern known as a schema which defines what attributes the claim is actually attributing to the Holder.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span><span class="p">,</span> <span class="n">timedelta</span>
+
 <span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_queries</span> <span class="k">as</span> <span class="n">cq</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_schemas</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">EnsureClient</span>
+
+<span class="c1"># See &quot;Getting Started&quot; and &quot;Create a DID&quot; for details on creating these</span>
+<span class="n">client</span><span class="p">:</span> <span class="n">EnsureClient</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">issuer_did</span><span class="p">:</span> <span class="n">credential_schemas</span><span class="o">.</span><span class="n">DID</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">holder_did</span><span class="p">:</span> <span class="n">credential_schemas</span><span class="o">.</span><span class="n">DID</span> <span class="o">=</span> <span class="o">...</span>
+
 <span class="n">my_schemas</span> <span class="o">=</span>  <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_schema_registry</span><span class="p">()</span>
 <span class="n">my_schema</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="n">my_schemas</span><span class="o">.</span><span class="n">schemas</span><span class="o">.</span><span class="n">values</span><span class="p">())[</span><span class="mi">0</span><span class="p">]</span>
 
 <span class="c1"># vc</span>
 <span class="n">my_new_vc</span> <span class="o">=</span> <span class="n">credential_schemas</span><span class="o">.</span><span class="n">CreateVCHttp</span><span class="p">(</span>
-  <span class="n">issuer</span><span class="o">=</span><span class="n">issuer_did</span><span class="o">.</span><span class="n">did_document</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span>
-  <span class="n">subject</span><span class="o">=</span><span class="n">holder_did</span><span class="o">.</span><span class="n">did_document</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span>
-  <span class="n">valid_from</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span> <span class="c1"># yesterday</span>
-  <span class="n">valid_until</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">365</span><span class="p">),</span> <span class="c1"># this time next year</span>
-  <span class="n">material</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;circom_circuit&quot;</span><span class="p">:</span> <span class="s2">&quot;SMTInclusionSingleClaim&quot;</span><span class="p">},</span> <span class="c1"># this is how the claims will be verified against the holder on chain</span>
-  <span class="n">claims</span><span class="o">=</span><span class="p">{</span>
-      <span class="n">my_schema</span><span class="o">.</span><span class="n">id</span><span class="p">[:</span><span class="n">my_schema</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)]:</span> <span class="p">{</span> <span class="c1"># the schema comes back in the form link#schema_name. We just need the link here</span>
-      <span class="n">my_schema</span><span class="o">.</span><span class="n">name</span><span class="p">:{</span> <span class="c1"># this is schema_name</span>
-              <span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">suggestedValues</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="c1"># a reliable way to make a verifiable claim. realistically you would input whatever value you actually need here.</span>
-          <span class="p">}</span>
-      <span class="p">}</span>
-  <span class="p">},</span>
-  <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;sdk&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;ensure&quot;</span><span class="p">]</span>
+    <span class="n">issuer</span><span class="o">=</span><span class="n">issuer_did</span><span class="o">.</span><span class="n">did_document</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span>
+    <span class="n">subject</span><span class="o">=</span><span class="n">holder_did</span><span class="o">.</span><span class="n">did_document</span><span class="p">[</span><span class="s2">&quot;id&quot;</span><span class="p">],</span>
+    <span class="n">valid_from</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">-</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">1</span><span class="p">),</span>  <span class="c1"># yesterday</span>
+    <span class="n">valid_until</span><span class="o">=</span><span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span> <span class="o">+</span> <span class="n">timedelta</span><span class="p">(</span><span class="n">days</span><span class="o">=</span><span class="mi">365</span><span class="p">),</span>  <span class="c1"># this time next year</span>
+    <span class="n">material</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;circom_circuit&quot;</span><span class="p">:</span> <span class="s2">&quot;SMTInclusionSingleClaim&quot;</span><span class="p">},</span>  <span class="c1"># this is how the claims will be verified against the holder on chain</span>
+    <span class="n">claims</span><span class="o">=</span><span class="p">{</span>
+        <span class="c1"># The schema comes back in the form link#schema_name. Using this information we are dynamically constructing a valid claim</span>
+        <span class="n">my_schema</span><span class="o">.</span><span class="n">id</span><span class="p">[:</span><span class="n">my_schema</span><span class="o">.</span><span class="n">id</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">&quot;#&quot;</span><span class="p">)]:</span> <span class="p">{</span>
+            <span class="n">my_schema</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="p">{</span>  <span class="c1"># this is schema_name</span>
+                <span class="c1"># a reliable way to make a verifiable claim.</span>
+                <span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">name</span><span class="p">:</span> <span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">suggestedValues</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span>
+            <span class="p">}</span>
+        <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;sdk&quot;</span><span class="p">,</span> <span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;ensure&quot;</span><span class="p">]</span>
+
 <span class="p">)</span>
 
 <span class="c1"># assuming this is an asynchronous function, we can use await instead of asyncio.run()</span>
@@ -517,15 +540,85 @@
 <span class="c1"># Verify the VC</span>
 <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">verify_vc</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">vc</span><span class="o">.</span><span class="n">model_dump_json</span><span class="p">())</span>
 <span class="k">if</span> <span class="ow">not</span> <span class="n">result</span><span class="o">.</span><span class="n">success</span><span class="p">:</span>
-  <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;The VC is invalid for some reason.&quot;</span><span class="p">)</span>
+    <span class="k">raise</span> <span class="ne">Exception</span><span class="p">(</span><span class="s2">&quot;The VC is invalid for some reason.&quot;</span><span class="p">)</span>
 
 <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">accept_vc</span><span class="p">(</span><span class="n">vc_id</span><span class="o">=</span><span class="n">vc_id</span><span class="p">,</span><span class="n">query_arguments</span><span class="o">=</span><span class="n">cq</span><span class="o">.</span><span class="n">AcceptVcQuery</span><span class="p">(</span><span class="n">accept</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span> <span class="c1"># the Holder needs to accept the credentials</span>
+</code></pre></div>
+<h2 id="publish-a-resource">Publish a resource</h2>
+<p>The resource service provides a use case for DIDs with VCs. To gain access to resources, represented by <strong>Bundles</strong>, an entity can use a VP. You can use the SDK to create a bundle, populate it with files, and publish it to make it visible and accessible.
+<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">resource_schemas</span><span class="p">,</span> <span class="n">resource_queries</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">EnsureClient</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_schemas</span> <span class="k">as</span> <span class="n">cs</span>
+
+<span class="n">client</span><span class="p">:</span> <span class="n">EnsureClient</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="n">storages</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_storages</span><span class="p">(</span><span class="n">query_arguments</span><span class="o">=</span><span class="n">resource_queries</span><span class="o">.</span><span class="n">GetStoragesQuery</span><span class="p">(</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">))</span>
+
+<span class="c1"># whatever storage you want</span>
+<span class="n">storage</span> <span class="o">=</span> <span class="n">storages</span><span class="o">.</span><span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+
+<span class="n">my_new_bundle</span> <span class="o">=</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">CreateResourceBundleRequest</span><span class="p">(</span>
+  <span class="n">name</span><span class="o">=</span><span class="s2">&quot;mybundle&quot;</span><span class="p">,</span>
+  <span class="n">storage_name</span><span class="o">=</span><span class="n">storage</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
+  <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;ensure&quot;</span><span class="p">,</span> <span class="s2">&quot;sdk&quot;</span><span class="p">],</span>
+<span class="p">)</span>
+<span class="n">bundle</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">create_bundle</span><span class="p">(</span><span class="n">createresourcebundlerequest</span><span class="o">=</span><span class="n">my_new_bundle</span><span class="p">)</span>
+
+<span class="n">upload</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">upload_files</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">file_url</span><span class="o">=</span><span class="s2">&quot;./my_secure_bundle_data.zip&quot;</span><span class="p">)</span>
+
+<span class="c1"># Same as the DID, we need to wait for this task to complete before we publish</span>
+<span class="n">upload_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">resource_get_task</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">task_id</span><span class="o">=</span><span class="n">upload</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">upload_task</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">cs</span><span class="o">.</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">COMPLETED</span><span class="p">:</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">upload_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">resource_get_task</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">task_id</span><span class="o">=</span><span class="n">upload_task</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+
+<span class="c1"># The bundle contains your data</span>
+<span class="n">publicationrequest</span> <span class="o">=</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">PublicationRequest</span><span class="p">(</span>
+    <span class="n">action</span><span class="o">=</span><span class="n">resource_schemas</span><span class="o">.</span><span class="n">Action</span><span class="o">.</span><span class="n">publish</span><span class="p">,</span>
+    <span class="n">account</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">model_dump</span><span class="p">()</span>
+<span class="p">)</span>
+<span class="n">publish</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">publish_action</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">publicationrequest</span><span class="o">=</span><span class="n">publicationrequest</span><span class="p">)</span>
+
+<span class="n">publish_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">resource_get_task</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">task_id</span><span class="o">=</span><span class="n">publish</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+
+<span class="k">while</span> <span class="n">publish_task</span><span class="o">.</span><span class="n">status</span> <span class="o">!=</span> <span class="n">cs</span><span class="o">.</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">COMPLETED</span><span class="p">:</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">publish_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">resource_get_task</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">task_id</span><span class="o">=</span><span class="n">publish</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
+
+<span class="c1"># The bundle is now visible and accessible on the chain. Entities can request access to it now.</span>
+<span class="c1"># If we want to control access we must add access policies to be tested against Holder VCs.</span>
+<span class="n">my_schema</span><span class="p">:</span> <span class="n">cs</span><span class="o">.</span><span class="n">CredentialSchema</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">new_policy</span> <span class="o">=</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">Policy</span><span class="p">(</span>
+    <span class="n">identifier</span><span class="o">=</span><span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">hash</span><span class="p">,</span>  <span class="c1"># the schema we used to define our VC</span>
+    <span class="n">junction</span><span class="o">=</span><span class="n">resource_schemas</span><span class="o">.</span><span class="n">Junction</span><span class="o">.</span><span class="n">AND</span><span class="p">,</span>
+    <span class="n">dataType</span><span class="o">=</span><span class="n">resource_schemas</span><span class="o">.</span><span class="n">DataType</span><span class="o">.</span><span class="n">STR</span><span class="p">,</span>
+    <span class="n">criteria</span><span class="o">=</span><span class="p">[</span>
+        <span class="p">{</span>
+            <span class="s2">&quot;op&quot;</span><span class="p">:</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">Op</span><span class="o">.</span><span class="n">EQ</span><span class="p">,</span>
+            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">suggestedValues</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="c1"># this should be whatever value you want to restrict access by</span>
+        <span class="p">}</span>
+    <span class="p">]</span>
+
+<span class="p">)</span>
+<span class="n">policy</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">add_policy</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">policy</span><span class="o">=</span><span class="n">new_policy</span><span class="p">)</span>
 </code></pre></div></p>
-<h3 id="create-a-vp">Create a VP</h3>
+<h2 id="create-a-vp">Create a VP</h2>
 <p>A <strong>Verifiable Presentation</strong> (VP) is a secure presentation of a VC. It allows entities to verify an entity holds a VC without exposing knowledge about the entity or the VC.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">import</span> <span class="nn">datetime</span>
 
-<span class="n">ADDRESS_FOR_YOUR_CREDENTIAL_DOMAIN</span> <span class="o">=</span> <span class="n">trust_profile</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">registrar_address</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_schemas</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">EnsureClient</span>
+
+<span class="n">client</span><span class="p">:</span> <span class="n">EnsureClient</span> <span class="o">=</span> <span class="o">...</span>
+<span class="n">my_trust_profile</span><span class="p">:</span> <span class="n">credential_schemas</span><span class="o">.</span><span class="n">TrustProfile</span> <span class="o">=</span> <span class="o">...</span>
+
+<span class="n">ADDRESS_FOR_YOUR_CREDENTIAL_DOMAIN</span> <span class="o">=</span> <span class="n">my_trust_profile</span><span class="o">.</span><span class="n">config</span><span class="o">.</span><span class="n">registrar_address</span>
+
+<span class="n">vc_id</span><span class="p">:</span> <span class="nb">str</span> <span class="o">=</span> <span class="o">...</span>  <span class="c1"># result from client.create_vc above</span>
 
 <span class="n">my_new_vp</span> <span class="o">=</span> <span class="n">credential_schemas</span><span class="o">.</span><span class="n">CreateVPHttp</span><span class="p">(</span>
     <span class="n">vc_id</span><span class="o">=</span><span class="n">vc_id</span><span class="p">,</span>
@@ -543,58 +636,15 @@
 
 <span class="n">result</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">verify_vp</span><span class="p">(</span><span class="n">body</span><span class="o">=</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">vp</span><span class="o">.</span><span class="n">vp</span><span class="p">))</span>
 </code></pre></div>
-<h3 id="publish-a-resource">Publish a resource</h3>
-<p>The resource service provides a use case for DIDs with VCs. To gain access to resources, represented by <strong>Bundles</strong>, an entity can use a VP. You can use the SDK to create a bundle, populate it with files, and publish it to make it visible and accessible.
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">resource_schemas</span><span class="p">,</span> <span class="n">resource_queries</span>
-<span class="n">storages</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_storages</span><span class="p">(</span><span class="n">query_arguments</span><span class="o">=</span><span class="n">resource_queries</span><span class="o">.</span><span class="n">GetStoragesQuery</span><span class="p">(</span><span class="n">page</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="mi">100</span><span class="p">))</span>
-
-<span class="c1"># whatever storage you want</span>
-<span class="n">storage</span> <span class="o">=</span> <span class="n">storages</span><span class="o">.</span><span class="n">items</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="n">my_new_bundle</span> <span class="o">=</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">CreateResourceBundleRequest</span><span class="p">(</span>
-  <span class="n">name</span><span class="o">=</span><span class="s2">&quot;mybundle&quot;</span><span class="p">,</span>
-  <span class="n">storage_name</span><span class="o">=</span><span class="n">storage</span><span class="o">.</span><span class="n">name</span><span class="p">,</span>
-  <span class="n">tags</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;test&quot;</span><span class="p">,</span> <span class="s2">&quot;ensure&quot;</span><span class="p">,</span> <span class="s2">&quot;sdk&quot;</span><span class="p">],</span>
-<span class="p">)</span>
-<span class="n">bundle</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">create_bundle</span><span class="p">(</span><span class="n">createresourcebundlerequest</span><span class="o">=</span><span class="n">my_new_bundle</span><span class="p">)</span>
-<span class="c1"># We have an empty bundle on chain</span>
-<span class="n">upload_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">upload_files</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">file_url</span><span class="o">=</span><span class="s2">&quot;./my_secure_bundle_data.zip&quot;</span><span class="p">)</span>
-<span class="c1"># Same as the DID, we need to wait for this task to complete before we publish</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">upload_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">resource_get_task</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">task_id</span><span class="o">=</span><span class="n">upload_task</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">upload_task</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">COMPLETED</span><span class="p">:</span>
-        <span class="k">break</span>
-
-<span class="c1"># The bundle contains your data</span>
-<span class="n">publicationrequest</span> <span class="o">=</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">PublicationRequest</span><span class="p">(</span>
-    <span class="n">action</span><span class="o">=</span><span class="n">resource_schemas</span><span class="o">.</span><span class="n">Action</span><span class="o">.</span><span class="n">publish</span><span class="p">,</span>
-    <span class="n">account</span><span class="o">=</span><span class="n">client</span><span class="o">.</span><span class="n">account</span><span class="o">.</span><span class="n">model_dump</span><span class="p">()</span>
-<span class="p">)</span>
-<span class="n">publish_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">publish_action</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">publicationrequest</span><span class="o">=</span><span class="n">publicationrequest</span><span class="p">)</span>
-<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
-    <span class="n">publish_task</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">resource_get_task</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">task_id</span><span class="o">=</span><span class="n">publish_task</span><span class="o">.</span><span class="n">id</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">publish_task</span><span class="o">.</span><span class="n">status</span> <span class="o">==</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">TaskStatus</span><span class="o">.</span><span class="n">COMPLETED</span><span class="p">:</span>
-        <span class="k">break</span>
-
-<span class="c1"># The bundle is now visible and accessible on the chain. Entities can request access to it now.</span>
-<span class="c1"># If we want to control access we must add access policies to be tested against Holder VCs.</span>
-<span class="n">new_policy</span> <span class="o">=</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">Policy</span><span class="p">(</span>
-    <span class="n">identifier</span><span class="o">=</span><span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">hash</span><span class="p">,</span>  <span class="c1"># the schema we used to define our VC</span>
-    <span class="n">junction</span><span class="o">=</span><span class="n">resource_schemas</span><span class="o">.</span><span class="n">Junction</span><span class="o">.</span><span class="n">AND</span><span class="p">,</span>
-    <span class="n">dataType</span><span class="o">=</span><span class="n">resource_schemas</span><span class="o">.</span><span class="n">DataType</span><span class="o">.</span><span class="n">STR</span><span class="p">,</span>
-    <span class="n">criteria</span><span class="o">=</span><span class="p">[</span>
-        <span class="p">{</span>
-            <span class="s2">&quot;op&quot;</span><span class="p">:</span> <span class="n">resource_schemas</span><span class="o">.</span><span class="n">Op</span><span class="o">.</span><span class="n">EQ</span><span class="p">,</span>
-            <span class="s2">&quot;value&quot;</span><span class="p">:</span> <span class="n">my_schema</span><span class="o">.</span><span class="n">attributes</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">suggestedValues</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="c1"># again, this should be whatever value you want to restrict access by</span>
-        <span class="p">}</span>
-    <span class="p">]</span>
-
-<span class="p">)</span>
-<span class="n">policy</span> <span class="o">=</span> <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">add_policy</span><span class="p">(</span><span class="n">uid</span><span class="o">=</span><span class="n">bundle</span><span class="o">.</span><span class="n">id</span><span class="p">,</span> <span class="n">policy</span><span class="o">=</span><span class="n">new_policy</span><span class="p">)</span>
-</code></pre></div></p>
-<h3 id="request-access">Request access</h3>
-<p>As the holder of a DID with VCs, you can use VPs of that VC to request access to bundles. The claims you hold within your VC will be matched against policies for that bundle. If you hold the required attributes, you can access that bundle.
+<h2 id="request-access">Request access</h2>
+<p>As the holder of a DID with VCs, you can use VPs of that VC to request access to bundles. The claims you hold within your VC will be matched against policies for that bundle. If you holdthe required attributes, you can access that bundle.</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">time</span>
+<span class="kn">import</span> <span class="nn">json</span>
+<span class="kn">from</span> <span class="nn">simba_sdk.ensure.client</span> <span class="kn">import</span> <span class="n">credential_schemas</span> <span class="k">as</span> <span class="n">cs</span>
+
+<span class="n">vp</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># VP from &quot;Create a VP&quot;</span>
+<span class="n">bundle</span> <span class="o">=</span> <span class="o">...</span> <span class="c1"># bundle from &quot;Publish a resource&quot;</span>
+
 <span class="n">vp_data</span> <span class="o">=</span> <span class="n">vp</span><span class="o">.</span><span class="n">model_dump_json</span><span class="p">()</span>
 <span class="n">vp_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">(</span><span class="n">vp_data</span><span class="p">)[</span><span class="s2">&quot;vp&quot;</span><span class="p">]</span>
 <span class="n">vp_data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="n">vp_data</span><span class="p">)</span>  <span class="c1"># we need to do this to deserialise the VP properly</span>
@@ -604,7 +654,7 @@
 <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="c1"># wait for the token to become valid</span>
 <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&quot;./test_download.tar.gz&quot;</span><span class="p">,</span> <span class="s2">&quot;wb&quot;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span> <span class="c1"># the resource service will tarball your data for you to send over a connection</span>
     <span class="k">await</span> <span class="n">client</span><span class="o">.</span><span class="n">get_access</span><span class="p">(</span><span class="n">output_stream</span><span class="o">=</span><span class="n">f</span><span class="p">,</span> <span class="n">token</span><span class="o">=</span><span class="n">resource_token</span><span class="o">.</span><span class="n">value</span><span class="p">)</span> <span class="c1"># this function takes any writable IO stream, not just files!</span>
-</code></pre></div></p>
+</code></pre></div>
 
 
 
@@ -651,10 +701,10 @@
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.af256bd8.min.js"></script>
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
       
     
   </body>
